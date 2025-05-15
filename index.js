@@ -2,6 +2,10 @@ const express = require('express')   // it is 3rd party module
 
 const app= express();
 const dotenv =require('dotenv').config();
+const {add,sub} = require('./math');   //destructuring 
+
+console.log(sub(1,4));
+
 
 // app.get("/", (req,res)=>{                                    // ?creating routes
 //     res.send({status:1, msg:"hello express"})
@@ -17,9 +21,12 @@ const port = process.env.PORT || 5000;
 //     res.status(200).json({message:"Get all Contacts"});
 // })
 
-app.use('/api/contacts', require("./routes/contactRoutes"));  // it is a type of middleware
+// app.use('/api/contacts', require("./routes/contactRoutes"));  // it is a type of middleware
 
-app.listen(port, ()=>{
-    console.log(`server is running on port ${port}`);
+// app.listen(port, ()=>{
+//     console.log(`server is running on port ${port}`);
     
-})
+// })
+
+
+
