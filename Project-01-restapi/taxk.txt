@@ -1,0 +1,19 @@
+REST API =JSON
+
+GET/users - list all users (Render HTML page document for the desktop purpose opening in browser)
+GET/api/users - list all users (Render JSON document for the mobile purpose or all devices to adapt)
+
+// Dynamic path parameters->
+GET/api/users/:id
+:id -> Variable/Dynamic
+
+GET/api/users/1 - Get all the user with id 1
+GET/api/users/2 - Get all the user with id 2
+
+POST/api/users - create new user
+
+PATCH/api/users/1 - Edit the user with id 1
+
+DELETE/api/users/1 - DELETE the user with id 1
+
+
